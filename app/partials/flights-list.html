@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      Search: <input ng-model="query">
+      Sort by:
+      <select ng-model="orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="age">Newest</option>
+      </select>
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+	  
+	<div>
+		<div style="border:solid 1px black;">
+			<button ng-click="test()">Click me</button><br/>
+			<input type="checkbox" ng-model="fail"/> Fail
+		</div>
+	</div>
+	  
+
+      <ul class="phones">
+        <li ng-repeat="(key,data) in airplanes | filter:query | orderBy:orderProp" class="thumbnail phone-listing">
+		  <p>{{key}}</p>
+		  <pre class="prettyprint linenums"> {{airplanes[key]}} </pre>
+		  
+		  
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
