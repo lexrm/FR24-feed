@@ -16,11 +16,11 @@ FR24App.config(['$routeProvider',
         controller: 'flightsListCtrl'
       }).
 	  
-      when('/phones/:phoneId', {
+      when('/planes/:planeId', {
         templateUrl: 'partials/flight-detail.html',
         controller: 'flightDetailCtrl'
       }).
       otherwise({
-        redirectTo: '/phones'
+        redirectTo: '/planes'
       });
   }]);

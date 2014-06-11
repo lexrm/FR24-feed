@@ -30,14 +30,7 @@ FR24Controllers.controller('flightsListCtrl', ['$scope', 'airplanes', 'airplanes
 		,10000);
 		
 }]);//flightDetailCtrl
-
-//not needed 
-FR24Controllers.controller('MyCtrl1', ['$scope', '$q', 'airplanes',
-		function($scope, $q, airplanes ) {
-			$scope.fail = false;
-			
-}]);
-  
+ 
 //for future needs
 FR24Controllers.controller('flightDetailCtrl', ['$scope', '$routeParams', 'airplanes',
   function($scope, $routeParams, airplanes) {
