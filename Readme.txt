@@ -1,9 +1,9 @@
-# The DataBase is:
+# DataBase:
 
-Flight details of all current flights all over the europe, about 2500 flights
-(there is an option to change the resource to different regions. Depends of what want to be covered. 
-For example it is passable also to get details of all flights all over the world, about 10000 flights).
-It is maintained as a key-value pair and key being the flight id and value an array of details 
+Flight details of all current flights all over europe, about 2500 flights
+(there is an option to change the resource to different regions, depending on what we want to be covered. 
+For example it is possible also to get details of all flights all over the world, about 10000 flights).
+It is maintained as a key-value pair where the key is the flight id and the value is an array of details 
 (including the speed, the altitude etc.).
 
 
@@ -12,10 +12,10 @@ It is maintained as a key-value pair and key being the flight id and value an ar
 1. Connection to the RESTful server of flightradar24.com
      (this connection provides constant online access to FR24 database).
 
-2. Displaying that data on the web browser (HTML5)
-     (this done by fetching this data from recieved JSON file).
+2. Displaying data on a web browser (HTML5)
+     (this is done by fetching this data from recieved JSON file).
 
-3. Error and messages handle (deferred and promise implementation).
+3. Error and messages handling (deferred and promise implementation).
 
 4. Repetition of steps 1-3
      (the above processes executed under the hood - providing the property of smooth data changing:
@@ -34,12 +34,12 @@ It is maintained as a key-value pair and key being the flight id and value an ar
     (to come back to the previous state, the browser cashed data have to be cleard). By doing this changeable
     details of the flights will be smootly representing in the browser.
 
-- If the connection to the server will be failed from some reason (like bad internet connection),
+- If the connection to the server will fail for some reason (like bad internet connection),
     then a suitable error will show-up (that in case that "prevent this page from creating additional dialogs" wasn't 
-    checked up before). But when the connection will returns the main process will be renewed automatically,
+    checked on before). But when the connection will return the main process will be renewed automatically,
     and no operations from the user are needed.
 
-- If there will be some changes in the path that given in the code to the resource, and the changes are not valid,
+- If there are some changes in the path that given in the code to the resource, and the changes are not valid,
     then by the reloading the page the user will be announced with a matching error.
 
       
@@ -60,6 +60,9 @@ http://localhost:8000/app/index.html#/planes
 
 Wait 10 sec. for the app being activated for the first time 
 (first upload need to be changed to one sec. of upload).
+
+
+to be continued...
 
 --
 Enjoy.
