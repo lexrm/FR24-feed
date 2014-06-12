@@ -3,6 +3,8 @@
 Flight details of all current flights all over the europe, about 2500 flights
 (there is an option to change the resource to different regions. Depends of what want to be covered. 
 For example it is passable also to get details of all flights all over the world, about 10000 flights).
+It is maintained as a key-value pair and key being the flight id and value an array of details 
+(including the speed, the altitude etc.).
 
 
 # Main tasks of FR24-feed angular webapp (for this stage of development) are:
@@ -41,5 +43,26 @@ For example it is passable also to get details of all flights all over the world
     then by the reloading the page the user will be announced with a matching error.
 
       
+Installation steps:
+
+in gitBash type:
+
+git clone https://github.com/lexrm/FR24-feed.git
+
+cd FR24-feed
+
+npm start
+(will do npm install + bower install + starting up the http-server)
+
+then in Chrome type:
+
+http://localhost:8000/app/index.html#/planes
+
+Wait 10 sec. for the app being activated for the first time 
+(first upload need to be changed to one sec. of upload).
+
+--
+Enjoy.
+
 
 
